@@ -1,0 +1,17 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.worksBlock {
+    background-color: $bgColor;
+    padding: 100px 0;
+    .worksContainer {
+        @include container();
+        @include flex(column, flex-start, stretch, nowrap);
+        .works {
+            @include flex(row, center, flex-start, wrap);
+            @media screen and (min-width:1129px){
+                justify-content: space-between;
+            }
+        }
+    }
+}

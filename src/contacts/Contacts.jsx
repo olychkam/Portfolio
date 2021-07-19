@@ -7,14 +7,12 @@ function Contacts() {
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Контакты</h2>
-                <div className={style.contacts}>
-                    <form>
-                        <p><input/></p>
-                        <p><input/></p>
+                    <form className={style.contacts}>
+                        <input type='text'/>
+                        <input type='text'/>
                         <textarea/>
                     </form>
-                </div>
-                <button className={style.button}>Отправить</button>
+                <button type='submit' className={style.button}>Отправить</button>
             </div>
         </div>
     );
