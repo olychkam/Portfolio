@@ -10,7 +10,9 @@ function Skill(props) {
                 <img src={props.icon} alt=""/>
             </div>
             <h3 className={style.skillTitle}>{props.title}</h3>
+{/*
             <span className={style.description}>{props.description}</span>
+*/}
         </div>
     );
 }

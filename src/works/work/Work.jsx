@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Work.module.scss';
+import Button from "../../common/components/button/Button";
 
 
 
@@ -7,7 +8,7 @@ function Work(props) {
     return (
         <div className={style.work}>
             <div className={style.icon} style={props.style}>
-                <a className={style.btn}>Look</a>
+                <Button text={"view"}/>
             </div>
            <div className={style.propjectInfo}>
                <h3 className={style.projectTitle}>{props.title}</h3>

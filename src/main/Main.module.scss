@@ -44,12 +44,15 @@
             }
           }
         }
+        &:nth-child(3) {
+          span {
+            @include text($textFontFamily, 28px, 1.8, 400);
+            margin: 0;
+          }
+        }
       }
 
-      h1 {
-        @include text($textFontFamily, 28px, 1.8, 400);
-        margin: 0;
-      }
+
 
       @media screen and (max-width: 1143px) {
         align-items: center;

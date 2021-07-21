@@ -1,7 +1,10 @@
 import React from 'react';
 import style from './Main.module.scss';
 import Particles from 'react-particles-js';
-
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt'
 
 
 function Main() {
@@ -17,21 +20,26 @@ function Main() {
         },
     };
     return (
-        <div className={style.mainBlock}>
+        <div id={'main'} className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOpt}/>
             <div className={style.container}>
-                <div className={style.text}>
+                <Fade left><div className={style.text}>
                     <span>Hi There</span>
                     <span>I am Olya <span>Martynova</span></span>
-                    <h1>Frontend Develover</h1>
+                    <ReactTypingEffect
+                        text={["Frontend Develover"]}/>
                 </div>
-                <div className={style.photo}>
+                </Fade>
+               <Flip left><Tilt className="Tilt" options={{ max : 25 }}><div className={style.photo}>
                     <div className={style.image}>
                     </div>
-                </div>
+                </div></Tilt>
+               </Flip>
+
             </div>
         </div>
-    );
+    )
+        ;
 }
 
 export default Main;

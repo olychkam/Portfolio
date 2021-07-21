@@ -3,9 +3,10 @@
 
 .work {
   width: 450px;
-  margin-top:40px;
+  margin-top: 40px;
   background-color: $bgSecondColor;
   @include flex(column, flex-start, stretch, nowrap);
+
   .icon {
     height: 300px;
     @include flex(row, center, center, nowrap);
@@ -39,16 +40,17 @@
 
   .propjectInfo {
     padding: 25px 20px;
-
     .projectTitle {
-      @include text($titleFontFamily, 16px, 1.2,800);
+      @include text($titleFontFamily, 16px, 1.2, 800);
       letter-spacing: 1px;
       margin: 0 0 5px;
+      color: $textColor;
     }
 
     .description {
-      @include text($textFontFamily, 14px, 1.8,400);
+      @include text($textFontFamily, 14px, 1.8, 400);
       font-weight: 400;
+      color: $textColor;
     }
   }
 }
