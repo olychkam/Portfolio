@@ -1,6 +1,7 @@
 import style from './burgerNav.module.scss';
 import {Link, animateScroll as scroll} from "react-scroll";
 import {useState} from "react";
+import MenuIcon from '@material-ui/icons/Menu';
 
 function BurgerNav() {
     const [burgerBtn, setBurgerBtn] = useState (false);
@@ -17,6 +18,12 @@ function BurgerNav() {
                       smooth={true}
                       offSet={1}
                       duration={500}>Main</Link>
+                <Link to={'about'}
+                      activeClass={style.active}
+                      spy={true}
+                      smooth={true}
+                      offSet={1}
+                      duration={500}>About</Link>
                 <Link to={'skills'}
                       activeClass={style.active}
                       spy={true}
@@ -37,7 +44,7 @@ function BurgerNav() {
                       offSet={1}
                       duration={500}>Contacts</Link>
             </div>
-            <div onClick={onClickBurgerBtn} className={style.burgerBtn}></div>
+            <MenuIcon onClick={onClickBurgerBtn} className={style.burgerBtn}></MenuIcon>
         </div>
     );
 }

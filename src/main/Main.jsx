@@ -27,7 +27,7 @@ function Main() {
                     <span>Hi There</span>
                     <span>I am Olya <span>Martynova</span></span>
                     <ReactTypingEffect
-                        text={["Frontend Develover"]}/>
+                        text={["Frontend Developer"]}/>
                 </div>
                 </Fade>
                <Flip left><Tilt className="Tilt" options={{ max : 25 }}><div className={style.photo}>

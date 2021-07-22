@@ -8,7 +8,7 @@ function Work(props) {
     return (
         <div className={style.work}>
             <div className={style.icon} style={props.style}>
-                <Button text={"view"}/>
+                <Button link={props.link} text={"view"}/>
             </div>
            <div className={style.propjectInfo}>
                <h3 className={style.projectTitle}>{props.title}</h3>
